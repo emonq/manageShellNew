@@ -9,8 +9,8 @@ Function delShellNew{
     Remove-Item -Path .\$item\ShellNew -Recurse
 }
 Set-Location -Path Registry::HKEY_CLASSES_ROOT
-$addList="c","cpp","js","json"
-$delList="accdb","rtf","pub","bmp"
+$addList="c","cpp","js","json","ps1","py","html","css","md"
+$delList="rtf","bmp"
 foreach ($item in $addList){
     addShellNew $item
 }
